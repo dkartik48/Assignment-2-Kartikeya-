@@ -9,13 +9,16 @@ if b>0 or b==0:
             a=a+(a*(b/100))
             x=x+1
         else:
+            print("Calorie intake is less than 1200")
             break
+            
 
 else:
     while (x<=c):
         if (a>=1200):
-            print(f"Day {1}: ",a)
+            print(f"Day {x}: ",a)
             a=a-(a*(b/100))
             x=x+1
         else:
+            print("Calorie intake is less than 1200")
             break

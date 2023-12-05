@@ -1,16 +1,13 @@
-numbers=[4,6,9,12,17,22,27,33,44]
-print("LIST: ",numbers )
-print("The maximum number in the list: ",max(numbers))
-x=numbers[7]
-numbers[7]=numbers[8]
-numbers[8]=x
-print("Last number swapped: ",numbers)
-
-numbers.remove(numbers[8])
-print("After removing last one: ",numbers)
-y=numbers[6]
-numbers[6]=numbers[7]
-numbers[7]=y
-print("Final LIST: ",numbers)
-numbers.sort()
-print("SORTED LIST: ",numbers)
+numbers=[4,6,9,27,17,22,12,33,44]
+i=0
+a=0
+while (a<=8):
+    for i in range(0,8):
+        if(i<8):
+            if (numbers[i]>numbers[i+1]):
+                x=numbers[i]
+                numbers[i]=numbers[i+1]
+                numbers[i+1]=x
+        i=i+1
+    a=a+1
+print(numbers)
